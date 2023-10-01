@@ -29,3 +29,43 @@ a.navLink:hover {
     color: red;
     background-color: #111;
 }
+
+
+/* Devicon */
+i {
+    font-size: 30px;
+    /* color: red; */
+}
+
+div.test {
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+div.test:hover {
+    background-color: #444;
+}
+
+a.test {
+    padding-right: 10px;
+    /* display: inline; */
+    color: white;
+    text-decoration: none;
+}
+
+a.test:hover {
+    color: white;
+}
+
+h1.test {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* .test {
+    display: inline;
+    color: white;
+    /* float: left; */
