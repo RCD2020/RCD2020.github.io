@@ -2,7 +2,7 @@ projects = [
     {
         'title': 'Portfolio',
         'tech': [
-            'HTML', 'CSS', 'Javscript'
+            'HTML', 'CSS', 'Javascript'
         ],
         'description': 'placeholder'
     }

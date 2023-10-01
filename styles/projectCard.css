@@ -1,0 +1,32 @@
+i {
+    font-size: 30px;
+}
+
+div.cardContainer {
+    background-color: #222;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+div.cardContainer:hover {
+    background-color: #444;
+}
+
+a.projCard {
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+a.projCard:hover {
+    color: white;
+}
+
+h1.projCard {
+    display: inline-block;
+    padding-right: 10px;
+}
