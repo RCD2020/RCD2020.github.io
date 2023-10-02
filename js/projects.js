@@ -4,6 +4,6 @@ projects = [
         'tech': [
             'HTML', 'CSS', 'Javascript'
         ],
-        'description': 'placeholder'
+        'description': 'The very project you are looking at right now.'
     }
 ]

@@ -1,16 +1,27 @@
 function devicon(tech)
 {
+    let text = '<div class="robtooltip">';
     switch (tech)
     {
         case 'HTML':
-            return '<i class="devicon-html5-plain-wordmark colored"></i>';
+            text +=  '<i class="devicon-html5-plain-wordmark colored"></i>';
+            break;
         case 'CSS':
-            return '<i class="devicon-css3-plain-wordmark colored"></i>';
+            text += '<i class="devicon-css3-plain-wordmark colored"></i>';
+            break;
         case 'Javascript':
-            return '<i class="devicon-javascript-plain colored"></i>';
+            text += '<i class="devicon-javascript-plain colored"></i>';
+            break;
         default:
-            return;
+            text += tech;
+            break;
     }
+
+    text += '<span class="robtooltiptext">';
+    text += tech;
+    text += '</span></div>';
+
+    return text;
 }
 
 
@@ -109,4 +120,11 @@ function writeProject(project)
 
     container = document.getElementById('projects');
     container.innerHTML += block;
+}
+
+
+function writeTemplate(target, code)
+{
+    container = document.getElementById(target);
+    container.innerHTML = code;
 }
