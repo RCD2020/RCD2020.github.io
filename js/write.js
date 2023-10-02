@@ -91,9 +91,9 @@ function div(inner='', divclass=null)
 
 function writeProject(project)
 {
-    let block = div(
-        inner = a(
-            href = 'projects/' + project['title'].toLowerCase() + '.html',
+    let block = a(
+        href = 'projects/' + project['title'].toLowerCase() + '.html',
+        inner = div(
             inner = h1(
                 inner = project['title'],
                 h1class = 'projCard'
@@ -102,9 +102,9 @@ function writeProject(project)
             ) + p(
                 project['description']
             ),
-            aclass = 'projCard'
+            divclass = 'cardContainer'
         ),
-        divclass = 'cardContainer'
+        aclass = 'cardContainer'
     );
 
     container = document.getElementById('projects');

@@ -8,21 +8,18 @@ div.cardContainer {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    color: white;
-    text-decoration: none;
 }
 
 div.cardContainer:hover {
     background-color: #444;
 }
 
-a.projCard {
-    padding-right: 10px;
+a.cardContainer {
     color: white;
     text-decoration: none;
 }
 
-a.projCard:hover {
+a.cardContainer:hover {
     color: white;
 }
 
