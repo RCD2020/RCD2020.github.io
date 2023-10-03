@@ -4,13 +4,13 @@ function devicon(tech)
     switch (tech)
     {
         case 'HTML':
-            text +=  '<i class="devicon-html5-plain-wordmark colored"></i>';
+            text +=  '<i class="techs devicon-html5-plain-wordmark colored"></i>';
             break;
         case 'CSS':
-            text += '<i class="devicon-css3-plain-wordmark colored"></i>';
+            text += '<i class="techs devicon-css3-plain-wordmark colored"></i>';
             break;
         case 'Javascript':
-            text += '<i class="devicon-javascript-plain colored"></i>';
+            text += '<i class="techs devicon-javascript-plain colored"></i>';
             break;
         default:
             text += tech;
