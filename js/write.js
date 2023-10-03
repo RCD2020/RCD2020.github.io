@@ -3,14 +3,29 @@ function devicon(tech)
     let text = '<div class="robtooltip">';
     switch (tech)
     {
-        case 'HTML':
-            text +=  '<i class="techs devicon-html5-plain-wordmark colored"></i>';
-            break;
         case 'CSS':
-            text += '<i class="techs devicon-css3-plain-wordmark colored"></i>';
+            text += '<i class="techs devicon-css3-plain colored"></i>';
+            break;
+        case 'Heroku':
+            text += '<i class="techs devicon-heroku-original colored"></i>';
+            break;
+        case 'HTML':
+            text +=  '<i class="techs devicon-html5-plain colored"></i>';
             break;
         case 'Javascript':
             text += '<i class="techs devicon-javascript-plain colored"></i>';
+            break;
+        case 'Jupyter':
+            text += '<i class="techs devicon-jupyter-plain colored"></i>';
+            break;
+        case 'Numpy':
+            text += '<i class="techs devicon-numpy-original colored"></i>';
+            break;
+        case 'Pandas':
+            text += '<i class="techs devicon-pandas-original"></i>';
+            break;
+        case 'Python':
+            text += '<i class="techs devicon-python-plain colored"></i>';
             break;
         default:
             text += tech;
@@ -117,7 +132,7 @@ function writeProject(project, dirDeep = 0)
     let href = hrefDeep(dirDeep);
 
     let block = a(
-        href = href + 'projects/' + project['title'].toLowerCase() + '.html',
+        href = href + 'projects/' + project['file'] + '.html',
         inner = div(
             inner = h1(
                 inner = project['title'],
