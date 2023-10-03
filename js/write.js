@@ -40,13 +40,18 @@ function devicon(tech)
 }
 
 
-function a(href, inner='', aclass = null)
+function a(href, inner='', aclass = null, isOutside = false)
 {
     let text = '<a href="' + href + '" ';
 
     if (aclass)
     {
         text += 'class="' + aclass + '" ';
+    }
+
+    if (isOutside)
+    {
+        text += 'target="_blank" rel="noopener noreferrer" '
     }
 
     text += '>' + inner + '</a>';
@@ -132,7 +137,8 @@ function writeProject(project, dirDeep = 0)
     let href = hrefDeep(dirDeep);
 
     let block = a(
-        href = href + 'projects/' + project['file'] + '.html',
+        // href = href + 'projects/' + project['file'] + '.html',
+        href = project['github'],
         inner = div(
             inner = h1(
                 inner = project['title'],
@@ -144,7 +150,8 @@ function writeProject(project, dirDeep = 0)
             ),
             divclass = 'cardContainer'
         ),
-        aclass = 'cardContainer'
+        aclass = 'cardContainer',
+        isOutside = true
     );
 
     container = document.getElementById('projects');
