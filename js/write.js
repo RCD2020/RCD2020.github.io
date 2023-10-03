@@ -100,10 +100,24 @@ function div(inner='', divclass=null)
 }
 
 
-function writeProject(project)
+function hrefDeep(dirDeep)
 {
+    let href = '';
+    for (var i = 0; i < dirDeep; i++)
+    {
+        href = '../';
+    }
+
+    return href;
+}
+
+
+function writeProject(project, dirDeep = 0)
+{
+    let href = hrefDeep(dirDeep);
+
     let block = a(
-        href = 'projects/' + project['title'].toLowerCase() + '.html',
+        href = href + 'projects/' + project['title'].toLowerCase() + '.html',
         inner = div(
             inner = h1(
                 inner = project['title'],
