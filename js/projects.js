@@ -36,6 +36,15 @@ projects = [
         'description': 'A page that simulates the gravity of planets in our solar system using javascript embedded in a HTML file.'
     },
     {
+        'title': 'Image Filtering WebApp',
+        'file': 'imgfilterwebapp',
+        'github': 'https://github.com/RCD2020/image-filter-webapp',
+        'tech': [
+            'Python', 'Flask', 'HTML'
+        ],
+        'description': 'A web application that implements a micro programming language I wrote in Python to filter images uploaded by the user.'
+    },
+    {
         'title': 'iOS Budget App',
         'file': 'budgetapp',
         'github': 'https://github.com/RCD2020/budgetapp',
