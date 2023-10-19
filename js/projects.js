@@ -40,7 +40,7 @@ projects = [
         'file': 'imgfilterwebapp',
         'github': 'https://github.com/RCD2020/image-filter-webapp',
         'tech': [
-            'Python', 'Flask', 'HTML'
+            'Python', 'Flask', 'HTML', 'CSS'
         ],
         'description': 'A web application that implements a micro programming language I wrote in Python to filter images uploaded by the user.'
     },
