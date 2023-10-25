@@ -3,6 +3,9 @@ function devicon(tech)
     let text = '<div class="robtooltip">';
     switch (tech)
     {
+        case 'C':
+            text += '<i class="techs devicon-c-plain colored"></i>';
+            break;
         case 'Chromium':
             text += '<i class="techs devicon-chrome-plain"></i>';
             break;
