@@ -18,6 +18,15 @@ projects = [
         'description': 'As part of the BloomTech course, I wrote a Medium articla where I conducted a comprehensive analysis of chess games from lichess.org, comprising over 20k games, to investigate the impact of playing as white or black on winning probabilities.'
     },
     {
+        'title': 'CS50x Projects',
+        'file': 'cs50x',
+        'github': 'https://github.com/RCD2020/CS50x-Projects',
+        'tech': [
+            'C', 'Python', 'SQLite', 'Flask', 'Javascript', 'HTML', 'CSS'
+        ],
+        'description': "All of the projects I worked on while taking Harvard's CS50x."
+    },
+    {
         'title': 'GeoHints Chrome Extension',
         'file': 'geohints',
         'github': 'https://github.com/RCD2020/geohintsquiz',
