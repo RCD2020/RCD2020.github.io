@@ -18,6 +18,15 @@ projects = [
         'description': 'As part of the BloomTech course, I wrote a Medium articla where I conducted a comprehensive analysis of chess games from lichess.org, comprising over 20k games, to investigate the impact of playing as white or black on winning probabilities.'
     },
     {
+        'title': 'CS50 AI Projects',
+        'file': 'cs50ai',
+        'github': 'https://github.com/RCD2020/CS50AI-Projects',
+        'tech': [
+            'Python'
+        ],
+        'description': "All of the projects I worked on while taking Harvard's CS50 AI."
+    },
+    {
         'title': 'CS50x Projects',
         'file': 'cs50x',
         'github': 'https://github.com/RCD2020/CS50x-Projects',
