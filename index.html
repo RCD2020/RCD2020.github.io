@@ -25,23 +25,10 @@
         <script src="js/template.js"></script>
     </head>
     <body>
-        <!--Bootstrap js-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <!-- SideBar -->
+        <div id="sidebar"></div>
+        <script>writeSidebar(0);</script>
 
-        <!--Navigation Bar-->
-        <div id="navBar"></div>
-        <script>writeTemplate('navBar', navBar(0));</script>
-
-        <!--Projects-->
-        <div id="projects">
-            <script>
-                for (var i = 0; i < projects.length; i++)
-                {
-                    writeProject(projects[i]);
-                }
-            </script>
-        </div>
-
-        <!-- Playground -->
+        
     </body>
 </html>
