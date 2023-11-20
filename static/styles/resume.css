@@ -1,0 +1,62 @@
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato/Lato-Bold.ttf');
+    font-weight: bold;
+}
+
+#resume {
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #666;
+    font-family: Lato;
+}
+
+#resume a {
+    text-decoration: underline;
+    color: #666;
+}
+
+#resume h1, #resume h3 {
+    line-height: .3;
+}
+
+.red {
+    color: darkred;
+}
+
+.dark {
+    color: #444;
+}
+
+.left, ul, li {
+    text-align: left;
+}
+
+#download {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#button {
+    background-color: #8bf;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#button:hover {
+    background-color: #6af;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 5px;
+}

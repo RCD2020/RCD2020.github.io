@@ -1,0 +1,75 @@
+.main {
+    color: #444;
+}
+
+.devicon-github-original-wordmark {
+    color: #444;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+}
+
+#title {
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#content img {
+    width: 45%;
+    border-radius: 10px;
+    border: solid 2px #444;
+    float: left;
+    margin-right: 10px;
+}
+
+#present {
+    text-align: center;
+}
+
+#video {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin: 5%;
+}
+
+#video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#shadow {
+    box-shadow: inset 0 16px 16px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px #ddd
+}
+
+#shadow img {
+    z-index: -2;
+    position: relative;
+    width: 100%;
+}
+
+#shadow, #shadow img {
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 625px) {
+    #content img {
+        width: 90%;
+        float: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #video {
+        margin: 0;
+    }
+}
