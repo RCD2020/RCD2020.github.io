@@ -1,0 +1,89 @@
+html {
+    background-color: #222;
+}
+
+
+
+/* Navigation Bar */
+ul.nav {
+    background-color: black;
+}
+
+li.navItem {
+    float: left;
+}
+
+img.profile {
+    border-radius: 50%;
+}
+
+img.navPic {
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+a.navLink {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+a.navLink:hover {
+    color: red;
+    background-color: #222;
+}
+
+i.w3navIcon {
+    font-size: 52px;
+}
+
+i.navIcon {
+    font-size: 50px;
+}
+
+
+
+/* Tooltips */
+.robtooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.robtooltip .robtooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.robtooltip .robtooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.robtooltip:hover .robtooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
