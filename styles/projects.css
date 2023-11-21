@@ -1,4 +1,4 @@
-.main {
+#main {
     color: #444;
 }
 
@@ -58,6 +58,15 @@
 
 #shadow, #shadow img {
     border-radius: 20px;
+}
+
+#main a {
+    text-decoration: underline;
+    color: #35f;
+}
+
+#main a:hover {
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 625px) {
