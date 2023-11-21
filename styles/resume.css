@@ -20,7 +20,11 @@
 
 #resume a {
     text-decoration: underline;
-    color: #666;
+    color: #35f;
+}
+
+#resume a:hover {
+    font-weight: bold;
 }
 
 #resume h1, #resume h3 {
