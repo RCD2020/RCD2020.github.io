@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Robert's Resume</title>
+
+        <!-- resume.css -->
+        <link rel="stylesheet" href="../styles/resume.css">
+
+        <!-- Google Download Icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+        <!-- --------------- Template ---------------- -->
+        <!-- Ensure directory is correct for local files, i.e. navigate to root -->
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Robert Davis's Programming Portfolio">
+        <meta name="author" content="Robert Davis">
+
+        <!--Favicon-->
+        <link rel="icon" type="image/png" href="../images/favicon.png" />
+
+        <!-- Styles -->
+        <link href="../styles/styles.css" rel="stylesheet">
+        <!-- Devicon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <!-- Google Menu Icon -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Javscript -->
+        <script src="../js/template.js"></script>
+    </head>
+
+    <body>
+        <!-- SideBar -->
+        <div id="sidebar"></div>
+        <script>writeSidebar(1);</script>
+
+        <div id="main">
+            <div id="download">
+                <a id="button" href="../documents/resume.pdf" download="resume.pdf">
+                    <span class="material-symbols-outlined">
+                        download
+                    </span>
+                    <b>Download Resume</b>
+                </a>
+            </div>
+
+            <div id="resume">
+                <h1><span class="red">ROBERT</span> <span class="dark">DAVIS</span></h1>
+
+                <p>
+                    <a href="mailto:dobertravis@icloud.com">dobertravis@icloud.com</a> |
+                    <a href="tel:+1(385)254-8051">(385) 254-8051</a> |
+                    Spanish Fork, UT<br>
+                    <a href="https://RCD2020.github.io">Portfolio</a> |
+                    <a href="https://github.com/RCD2020">GitHub</a> |
+                    <a href="https://www.linkedin.com/in/robert-davis-8b7903218">LinkedIn</a>
+                </p>
+                <hr>
+
+                <h3 class="red">SKILLS</h3>
+                <p>Python | SQL | Excel | Management</p>
+                <hr>
+
+                <h3 class="red">PROJECTS</h3>
+                <p class="left">
+                    <span class="red"><b>Spotify Song Recommender</b></span><br>
+                    Python | Flask | SQL | HTML | CSS<br>
+                    Deployed website that takes a song and recommends other songs.
+                    <ul>
+                        <li>Worked on a team of 4 to deploy a heroku hosted website in under 10 days.</li>
+                        <li>Using python built a gradient boosting tree model to analyze thousands of Spotify songs.</li>
+                        <li>Utilized Spotify API to recommend new songs.</li>
+                    </ul>
+                </p>
+
+                <p class="left">
+                    <span class="red"><b>Image Filter Webapp</b></span><br>
+                    Python | Flask | HTML<br>
+                    Published iOS app
+                    <ul>
+                        <li>Implemented custom programming language via Python</li>
+                        <li>Allows user to write code to filter user-uploaded images</li>
+                    </ul>
+                </p>
+
+                <p class="left">
+                    <span class="red"><b>iOS Budgeting App</b></span><br>
+                    Swift<br>
+                    Publish iOS app
+                    <ul>
+                        <li>Learned Swift and UIKit to build and deploy an app to the iOS app store</li>
+                        <li>Worked solo and completed the project in 2 weeks</li>
+                    </ul>
+                </p>
+
+                <p class="left">
+                    <span class="red"><b>Gravity Sim</b></span><br>
+                    Javascript | HTML<br>
+                    Webpage that simulates solar system
+                    <ul>
+                        <li>Using canvas elements, simulated the solar system.</li>
+                        <li>Uses real physics to mathematically compute the orbits.</li>
+                    </ul>
+                </p>
+                <hr>
+
+                <h3 class="red">EXPERIENCE</h3>
+                <p class="left">
+                    <b class="red">Shift Lead</b><br>
+                    <b>Cracker Barrel Old Country Store</b>, Springville, UT<br>
+                    October 2017 - June 2022
+                    <ul>
+                        <li>Managed a team of 30 employees. Tasks include coaching on technique and presentation.</li>
+                        <li>Interviewed and trained applicants up to company standards.</li>
+                        <li>Organized an analyzed food production, usage, and waste data daily in order to cut down on food cost.</li>
+                    </ul>
+                </p>
+                <hr>
+
+                <h3 class="red">EDUCATION</h3>
+                <p class="left">
+                    <b class="red">Harvard Univerity</b><br>
+                    Computer Science<br>
+                    August 2023 - Now
+                    <ul>
+                        <li>
+                            CS50x is a 10 week computer science program where
+                            students begin by developing C applications such as an
+                            image filter or a DNA simulator, and then move on to
+                            learning to develop web applications using Flask and
+                            obviously HTML, Javascript, and CSS. For my final
+                            project, I developed a web application using Flask that
+                            implements a custom micro programming language to allow
+                            users to write filters for images.
+                        </li>
+                    </ul>
+                </p>
+
+                <p class="left">
+                    <b class="red">Bloom Institute of Technology</b><br>
+                    Data Science<br>
+                    July 2021 - December 2021
+                    <ul>
+                        <li>
+                            BloomTech (formerly Lambda) is an accelerated program
+                            with an immersive (full-time, 40+ hours/week) hands-on
+                            curriculum with a focus on data engineering, computer
+                            science, and software engineering.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
