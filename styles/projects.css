@@ -71,6 +71,13 @@
     font-weight: bold;
 }
 
+/* Gravity Sim */
+#sim canvas {
+    background-color: black;
+    border-radius: 25px;
+}
+
+/* Small Size */
 @media only screen and (max-width: 625px) {
     #content img {
         width: 90%;
