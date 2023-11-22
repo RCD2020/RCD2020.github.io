@@ -4,7 +4,7 @@
     padding-right: 5%;
 }
 
-.devicon-github-original-wordmark {
+#main i {
     color: #444;
     position: relative;
     top: 5px;
@@ -16,6 +16,7 @@
     padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 #content img {
@@ -62,7 +63,7 @@
     border-radius: 20px;
 }
 
-#main a {
+#content a {
     text-decoration: underline;
     color: #35f;
 }
