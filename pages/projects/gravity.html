@@ -9,6 +9,18 @@
         <link rel="stylesheet" href="../../styles/projects/gravity.css">
         <script src="../../js/projects/gravity.js" defer></script>
 
+        <!-- Math Equations -->
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+
         <!-- --------------- Template ---------------- -->
         <!-- Ensure directory is correct for local files, i.e. navigate to root -->
         <!-- Meta -->
@@ -61,6 +73,44 @@
                 <p>
                     The Gravity Sim is a canvas element that emulates gravity
                     of celestial bodies using real math.
+                </p>
+                <p>
+                    Looking for a better understanding of vectors, I decided
+                    to work on a project that would apply vectors and be
+                    a lot of fun to work on, and that lead me to making
+                    a model of the solar system using HTML's canvas element
+                    and Javascript.
+                </p>
+                <h3>Details</h3>
+                <p>
+                    Hit start up above to see it for yourself, not really
+                    much else to it. Looping through a list of celestial
+                    bodies and applying the formula for gravity (below)
+                    between each body, I can calculate the Force between
+                    two bodies.
+                </p>
+                $$F_{g} = G \frac{m_{1} m_{2}}{r^{2}}$$
+                <ul>
+                    <li>$F_{g}$ is the force between the objects in Newtons ($N$)</li>
+                    <li>$G$ is the gravitational constant, $6.674*10^{-11}m^{3}kg^{-1}s^{2}$</li>
+                    <li>$m_{1}$ and $m_{2}$ are the masses of the objects in kilograms ($kg$)</li>
+                    <li>$r$ is the distance between the centers of the objects in meters ($m$)</li>
+                </ul>
+                <p>
+                    And then once I have the force, I can calculate the
+                    acceleration by using the equation for force from mass
+                    and acceleration (below) and add that to the vector.
+                </p>
+                $$F = ma$$
+                $$a = \frac{F}{m}$$
+                <ul>
+                    <li>$a$ is the acceleration in meters per second squared ($m/s^{2}$)</li>
+                    <li>$F$ is the force in Newtons ($N$)</li>
+                    <li>$m$ is the mass in kilograms ($kg$)</li>
+                </ul>
+                <p>
+                    After that, it's all about rendering it, which I did
+                    using HTML's canvas element.
                 </p>
             </div>
         </div>
