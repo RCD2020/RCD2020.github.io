@@ -19,6 +19,10 @@
     text-decoration: none;
 }
 
+#content {
+    font-size: 1.2em;
+}
+
 #content img {
     width: 45%;
     border-radius: 10px;
