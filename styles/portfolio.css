@@ -2,3 +2,75 @@
     margin-left: 2%;
     margin-right: 2%;
 }
+
+.card a {
+    color: #35f;
+    text-decoration: underline;
+}
+
+.card a:hover {
+    font-weight: bold;
+}
+
+.tag {
+    padding: 5px 7px 5px 7px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    white-space: nowrap;
+    background-color: #ccc;
+}
+
+.tags {
+    overflow-y: scroll;
+    padding: 8px 0 8px 0;
+}
+
+/* Langugaes */
+.HTML {
+    border-color: #e34c26;
+    background-color: #f36456;
+}
+
+.Python {
+    border-color: #3572a5;
+    background-color: #65a2d5;
+}
+
+/* Technologies */
+.Flask {
+    border-color: #3592a5;
+    background-color: #65c2d5;
+}
+
+.Heroku {
+    border-color: #6726a6;
+    background-color: #9756d6;
+}
+
+.Jupyter {
+    border-color: #da5b0b;
+    background-color: #fa8b3b;
+}
+
+.MongoDB {
+    border-color: #00684a;
+    background-color: #30987a;
+}
+
+.Numpy {
+    border-color: #4cabcf;
+    background-color: #7cdbff;
+}
+
+.Pandas {
+    border-color: #130754;
+    background-color: #433784;
+}
+
+.Scikit-learn {
+    border-color: #357fa5;
+    background-color: #65afd5;
+}
