@@ -2,12 +2,12 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.about-me {
+#header {
     background-color: #f7f7f7;
     padding: 1px 10px 30px 10px;
 }
 
-.about-me a {
+#header a {
     background-color: #8bf;
     border: none;
     color: white;
@@ -17,15 +17,15 @@ html {
     transition: background-color 0.3s;
 }
 
-.about-me a:hover {
+#header a:hover {
     background-color: #6af;
 }
 
-.about-me h2 {
+#header h2 {
     color: #333;
 }
 
-.about-me p {
+#header p {
     color: #666;
 }
 
