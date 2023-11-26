@@ -36,6 +36,27 @@ const PROJ = [
         ]
     },
     {
+        'name': 'CS50 AI Projects',
+        'image': 'cs50ai.png',
+        'description': `CS50 AI: Introduction to Artificial Intelligence
+            with Python is a 10 week course that explores the concepts and
+            algorithms behind modern day artificial intelligence. Through
+            hands-on projects, I gained exposure to the theory behind graph
+            search algorithms, classification, optimization, machine learning,
+            large language models, and other topics all incorporated in
+            my own Python projects. This is a repository containing all
+            of the projects I worked on.`,
+        'links': [
+            ['GitHub', 'https://github.com/RCD2020/CS50AI-Projects']
+        ],
+        'lang': [
+            'Python', 'HTML'
+        ],
+        'tech': [
+            'AI'
+        ]
+    },
+    {
         'name': 'Spotify Song Recommender',
         'image': 'spotty.jpeg',
         'description': `A Heroku hosted webpage built in a team of 4, we
