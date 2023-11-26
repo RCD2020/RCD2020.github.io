@@ -40,6 +40,11 @@
 }
 
 /* Technologies */
+.Docker {
+    background-color: #0db7ed;
+    border-color: #0097bd;
+}
+
 .Flask {
     border-color: #3592a5;
     background-color: #65c2d5;
@@ -73,4 +78,14 @@
 .Scikit-learn {
     border-color: #357fa5;
     background-color: #65afd5;
+}
+
+.SQLAlchemy {
+    border-color: #ca2727;
+    background-color: #fa5757;
+}
+
+.SQLite {
+    border-color: #0f7fcc;
+    background-color: #3faffc;
 }

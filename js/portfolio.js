@@ -1,5 +1,23 @@
 const PROJ = [
     {
+        'name': 'Bloom Projects',
+        'image': 'lambda-projects.png',
+        'description': `BloomTech (formerly Lambda) is a 6 month long bootcamp
+            program, and I took the Data Science course where I learned
+            many machine learning models as well as other important skills
+            such as site deployment and Dockerfiles.`,
+        'links': [
+            ['GitHub', 'https://github.com/RCD2020/lambda-projects']
+        ],
+        'lang': [
+            'Python'
+        ],
+        'tech': [
+            'Scikit-learn', 'Docker', 'Heroku', 'MongoDB', 'SQLAlchemy',
+            'SQLite', 'Flask', 'Numpy', 'Pandas', 'Jupyter'
+        ]
+    },
+    {
         'name': 'Spotify Song Recommender',
         'image': 'spotty.jpeg',
         'description': `A Heroku hosted webpage built in a team of 4, we
