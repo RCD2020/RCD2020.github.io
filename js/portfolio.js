@@ -1,11 +1,13 @@
 const PROJ = [
     {
-        'name': 'Bloom Projects',
+        'name': 'BloomTech Projects',
         'image': 'lambda-projects.png',
-        'description': `BloomTech (formerly Lambda) is a 6 month long bootcamp
-            program, and I took the Data Science course where I learned
-            many machine learning models as well as other important skills
-            such as site deployment and Dockerfiles.`,
+        'description': `Bloom Institute of Technology (formerly Lambda)
+            is a 6 month long bootcamp program, and I took the Data
+            Science course where I learned many machine learning models
+            as well as other important skills such as site deployment and
+            Dockerfiles. This is everything that I worked on from notes
+            to projects.`,
         'links': [
             ['GitHub', 'https://github.com/RCD2020/lambda-projects']
         ],
@@ -15,6 +17,22 @@ const PROJ = [
         'tech': [
             'Scikit-learn', 'Docker', 'Heroku', 'MongoDB', 'SQLAlchemy',
             'SQLite', 'Flask', 'Numpy', 'Pandas', 'Jupyter'
+        ]
+    },
+    {
+        'name': 'Chess Move Analysis Article',
+        'image': 'chess-analysis-small.jpeg',
+        'description': `Conducted a comprehensive analysis of chess games
+            from lichess.org, comprising over 20k games, to investigate
+            the impact of playing as white or black on winning probabilities.`,
+        'links': [
+            ['Medium', 'https://medium.com/@dolbycavis/the-white-advantage-579b5cad1f']
+        ],
+        'lang': [
+            'Python'
+        ],
+        'tech': [
+            'Scikit-learn', 'Numpy', 'Pandas', 'Jupyter'
         ]
     },
     {
