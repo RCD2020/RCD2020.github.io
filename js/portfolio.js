@@ -74,6 +74,27 @@ const PROJ = [
         ]
     },
     {
+        'name': 'GeoHints Chrome Extension',
+        'image': 'geohints.png',
+        'description': `The GeoHints Extension is a Chrome browser extension meant to
+            help users study for popular online game <a href="https://www.geoguessr.com"
+            target="_blank">GeoGuessr</a>. It modifies an existing webpage
+            called <a href="https://geohints.com" target="_blank">GeoHints</a>
+            that provides many resources for identifying countries around
+            the world, and my extension takes the resources and generates
+            a quiz for users to test their knowledge on.`,
+        'links': [
+            ['Chrome Webstore', 'https://chromewebstore.google.com/detail/geohints-quiz-format/lnoonlbpdaahobpdpdbccnjodeapdelb'],
+            ['GitHub', 'https://github.com/RCD2020/geohintsquiz']
+        ],
+        'lang': [
+            'Javascript', 'CSS'
+        ],
+        'tech': [
+            'Chromium'
+        ]
+    },
+    {
         'name': 'Spotify Song Recommender',
         'image': 'spotty.jpeg',
         'description': `A Heroku hosted webpage built in a team of 4, we

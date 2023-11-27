@@ -60,6 +60,11 @@
 }
 
 /* Technologies */
+.Chromium {
+    border-color: #CE4E4E;
+    background-color: #fe7e7e;
+}
+
 .Docker {
     background-color: #0db7ed;
     border-color: #0097bd;
