@@ -29,14 +29,34 @@
 }
 
 /* Langugaes */
+.C {
+    border-color: #555;
+    background-color: #858585;
+}
+
+.CSS {
+    border-color: #563d7c;
+    background-color: #865dac;
+}
+
 .HTML {
     border-color: #e34c26;
     background-color: #f36456;
 }
 
+.Javascript {
+    background-color: #f1e05a;
+    border-color: #c1b02a;
+}
+
 .Python {
     border-color: #3572a5;
     background-color: #65a2d5;
+}
+
+.SQL {
+    border-color: #472ca1;
+    background-color: #775cd1;
 }
 
 /* Technologies */
@@ -73,6 +93,11 @@
 .Pandas {
     border-color: #130754;
     background-color: #433784;
+}
+
+.Pillow {
+    border-color: #185ca5;
+    background-color: #488cd5;
 }
 
 .Scikit-learn {

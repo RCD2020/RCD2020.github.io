@@ -39,7 +39,7 @@ const PROJ = [
         'name': 'CS50 AI Projects',
         'image': 'cs50ai.png',
         'description': `CS50 AI: Introduction to Artificial Intelligence
-            with Python is a 10 week course that explores the concepts and
+            with Python is a 7 week course by Harvard that explores the concepts and
             algorithms behind modern day artificial intelligence. Through
             hands-on projects, I gained exposure to the theory behind graph
             search algorithms, classification, optimization, machine learning,
@@ -54,6 +54,23 @@ const PROJ = [
         ],
         'tech': [
             'AI'
+        ]
+    },
+    {
+        'name': 'CS50x Projects',
+        'image': 'cs50x.png',
+        'description': `CS50x: Introduction to Computer Science is a 10
+            week course by Harvard that goes over topics including abstraction,
+            algorithms, data structures, encapsulation, resource management,
+            security, software engineering, and web development.`,
+        'links': [
+            ['GitHub', 'https://github.com/RCD2020/CS50x-Projects']
+        ],
+        'lang': [
+            'C', 'Python', 'SQL', 'Javascript', 'CSS', 'HTML'
+        ],
+        'tech': [
+            'SQLite', 'Flask', 'Pillow'
         ]
     },
     {
