@@ -112,6 +112,24 @@ const PROJ = [
         ]
     },
     {
+        'name': 'Image Filter Webapp',
+        'image': 'image-filter-webapp.png',
+        'description': `Flask webpage that allows users to write their
+            own filters using a custom micro programming language to
+            alter user submitted images`,
+        'links': [
+            ['self', 'projects/image_filter_webapp.html'],
+            ['GitHub', 'https://github.com/RCD2020/image-filter-webapp'],
+            ['YouTube', 'https://youtu.be/xd1S5BldGhg']
+        ],
+        'lang': [
+            'Python', 'Javascript', 'HTML', 'CSS'
+        ],
+        'tech': [
+            'Flask', 'Pillow'
+        ]
+    },
+    {
         'name': 'Spotify Song Recommender',
         'image': 'spotty.jpeg',
         'description': `A Heroku hosted webpage built in a team of 4, we
