@@ -95,6 +95,23 @@ const PROJ = [
         ]
     },
     {
+        'name': 'Gravity Sim',
+        'image': 'gravity.png',
+        'description': `The Gravity Sim is an HTML canvas element that, 
+            using Javascript and real world physics, simulates gravity between celestial bodies 
+            in the Solar System.`,
+        'links': [
+            ['self', 'projects/gravity.html'],
+            ['GitHub', 'https://github.com/RCD2020/gravitySim']
+        ],
+        'lang': [
+            'Javascript', 'HTML'
+        ],
+        'tech': [
+            'N/A'
+        ]
+    },
+    {
         'name': 'Spotify Song Recommender',
         'image': 'spotty.jpeg',
         'description': `A Heroku hosted webpage built in a team of 4, we
@@ -102,6 +119,7 @@ const PROJ = [
             dataset, and by leveraging Spotify's Search API, we recommend
             5 songs that are similar to the user submitted one.`,
         'links': [
+            ['self', 'projects/spotty.html'],
             ['GitHub', 'https://github.com/ft-spotify-4/spotty']
         ],
         'lang': [
@@ -148,10 +166,16 @@ function write() {
         card.innerHTML += techs;
 
         for (let y in PROJ[x]['links']) {
-            card.innerHTML += `<p>Check out on <a
+            if (PROJ[x]['links'][y][0] == 'self') {
+                card.innerHTML += `<p><a
+                href="${PROJ[x]['links'][y][1]}"
+                >Detail Page</a></p>`
+            } else {
+                card.innerHTML += `<p>Check out on <a
                 href="${PROJ[x]['links'][y][1]}"
                 target="_blank"
                 >${PROJ[x]['links'][y][0]}</a>!</p>`;
+            }
         }
 
         div.appendChild(card);
