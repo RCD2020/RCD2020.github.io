@@ -54,6 +54,11 @@
     background-color: #65a2d5;
 }
 
+.Swift {
+    border-color: #f05138;
+    background-color: #ff8168;
+}
+
 .SQL {
     border-color: #472ca1;
     background-color: #775cd1;
@@ -108,6 +113,11 @@
 .Scikit-learn {
     border-color: #357fa5;
     background-color: #65afd5;
+}
+
+.SwiftUI {
+    border-color: #179de8;
+    background-color: #47cdff;
 }
 
 .SQLAlchemy {

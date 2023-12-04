@@ -130,6 +130,25 @@ const PROJ = [
         ]
     },
     {
+        'name': 'Simply Savings',
+        'image': 'simplysavings.png',
+        'description': `Published iOS budgeting app that gives users the
+            ability to keep track of their spendable income, their
+            income to debt ratio, and their recurring charges in order
+            to stay on top of their finances.`,
+        'links': [
+            ['self', 'projects/simplysavings.html'],
+            ['AppStore', 'https://apps.apple.com/in/app/simply-savings-easy-budget/id6443960444'],
+            ['GitHub', 'https://github.com/RCD2020/budgetapp']
+        ],
+        'lang': [
+            'Swift'
+        ],
+        'tech': [
+            'SwiftUI'
+        ]
+    },
+    {
         'name': 'Spotify Song Recommender',
         'image': 'spotty.jpeg',
         'description': `A Heroku hosted webpage built in a team of 4, we
