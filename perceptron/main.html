@@ -4,6 +4,9 @@
     <head>
         <title>Perceptrons</title>
 
+        <!--Favicon-->
+        <link rel="icon" type="image/png" href="../favicon.png" />
+
         <!-- Math Equations -->
         <script>
             MathJax = {
@@ -15,12 +18,15 @@
         <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
         </script>
+
+        <!-- Sim Script -->
+        <script src="js/perceptron.js" defer></script>
     </head>
     <body>
         <div id="concept">
             <h2>Conception</h2>
             <p>
-                <!-- TODO: Explain discovery of neurons in brain and how
+                <!-- Explain discovery of neurons in brain and how
                 Frank Rosenblatt had thought that neurons could be
                 simulated using perceptrons -->
 
@@ -38,7 +44,7 @@
         <div id="percept">
             <h2>Perceptron</h2>
             <p>
-                <!-- TODO: Explain mathematical principles of
+                <!-- Explain mathematical principles of
                 perceptron -->
 
                 <img
@@ -83,7 +89,57 @@
             <p>
                 <!-- TODO: Interactive example of perceptron using
                 javascript -->
+
+                Let's say you're planning on buying a game, some factors
+                that might help you decide on a certain game could be
+                whether the game has positive reviews, has good
+                graphics, looks fun, is affordable, and is a genre that you
+                enjoy. Below we've simulated this scenario.
+
+                <div id="sim"></div>
+
+                <input
+                    type="checkbox" id="c-rev"
+                    onchange="setInput(0)" checked>
+                Positive Reviews
+                <input type="range" id="r-rev" oninput="setWeight(0)"
+                    min="0" max="1" step=".05" value="0.9">
+                <br>
+
+                <input type="checkbox" id="c-gra"
+                    onchange="setInput(1)">
+                Good Graphics
+                <input type="range" id="r-gra" oninput="setWeight(1)"
+                    min="0" max="1" step=".05" value="0.3">
+                <br>
+
+                <input type="checkbox" id="c-fun"
+                    onchange="setInput(2)" checked>
+                Looks Fun
+                <input type="range" id="r-fun" oninput="setWeight(2)"
+                    min="0" max="1" step=".05" value="0.8">
+                <br>
+
+                <input type="checkbox" id="c-aff"
+                    onchange="setInput(3)">
+                Is Affordable
+                <input type="range" id="r-aff" oninput="setWeight(3)"
+                    min="0" max="1" step=".05" value="0.5">
+                <br>
+
+                <input type="checkbox" id="c-gen"
+                    onchange="setInput(4)">
+                Liked Genre
+                <input type="range" id="r-gen" oninput="setWeight(4)"
+                    min="0" max="1" step=".05" value="0.6">
+                <br>
+
+                Threshold (%)
+                <input type="range" id="threshold"
+                oninput="setThreshold()"
+                min="0" max="1" step=".05" value=".5">
             </p>
         </div>
+        <br><br><br><br><br><br><br>
     </body>
 </html>
