@@ -110,6 +110,7 @@ function updateSimArea() {
     }
 
     // output
+    ctx.lineWidth = 5;
     ctx.beginPath();
     ctx.arc(
         WIDTH - 25, HEIGHT / 2 - 30, 20, 0, 2 * Math.PI, false
