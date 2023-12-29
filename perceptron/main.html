@@ -3,6 +3,18 @@
 <html lang="en">
     <head>
         <title>Perceptrons</title>
+
+        <!-- Math Equations -->
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
     </head>
     <body>
         <div id="concept">
@@ -28,6 +40,41 @@
             <p>
                 <!-- TODO: Explain mathematical principles of
                 perceptron -->
+
+                <img
+                    src="https://www.w3schools.com/ai/img_perceptron.jpg"
+                    alt="original perceptron">
+
+                <br>
+
+                The first part of the perceptron is the input. The input
+                can be represented as a series of <b>nodes</b>,
+                originally binary inputs ($x_i$) all with their own
+                individual <b>weight</b> ($w_i$). We will then get the
+                sum of all the inputs and weights multiplied,
+                represented by the following equation:
+
+                $$
+                \sum^n_{i=0}{x_i \cdot w_i}
+                $$
+
+                Now we must determine our <b>threshold</b> value. The
+                threshold will be compared to the results of the
+                previous equation to determine whether the final output
+                will be 1 or 0. This value will be adjusted throughout
+                the training process to determine the best results, but
+                if you are looking for something in the middle, you take
+                the sum of the weights and divide by 2.
+
+                $$
+                \frac{\sum^n_{i=0}{w_i}}{2}
+                $$
+
+                Now using our threshold, we can determine the
+                <b>Activation Function</b>. The activation function
+                determines whether the the final output of the
+                perceptron, originally a 1 or a 0. It is simply
+                represented as $sum > threshold$.
             </p>
         </div>
 
