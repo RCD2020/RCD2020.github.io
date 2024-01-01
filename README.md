@@ -11,4 +11,4 @@ In it, you can find my resume, how to contact me, and my previous projects.
 ## Perceptrons
 
 The basis of modern datascience and AI, the perceptron emulates a neuron,
-and you can find out how it works [here](https://RCD2020.github.io/perceptron/main.html).
+and you can find out how it works [here](https://RCD2020.github.io/w3ai/perceptron/main.html).
