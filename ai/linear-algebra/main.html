@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Linear Algebra</title>
+
+        <!--Favicon-->
+        <link rel="icon" type="image/png" href="../favicon.png" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="../../index.css">
+
+        <!-- Math Equations -->
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    </head>
+    <body>
+        <header>
+            <a href="../../index.html">Home</a>&nbsp;
+            <a href="../index.html">Back</a>
+        </header>
+
+        <div id="definition">
+            <h2>
+                What is Linear Algrebra?
+            </h2>
+
+            <p>
+                To understand what Linear Algebra is, first we should
+                understand what a linear equation is. A linear equation
+                is an equation where each value includes no
+                exponentiation (other than $1$) and isn't passed into
+                any functions. For example:
+
+                $$
+                x + y + z = 0
+                $$
+                $$
+                a + b + c + d + e = 54
+                $$
+
+                Examples of equations that are not linear include:
+
+                $$
+                x^2 + y = 3
+                $$
+                <div class="context">
+                    This is not a linear equation because it includes
+                    exponentiation.
+                </div>
+
+                $$
+                sin(x) + log(y) = 13
+                $$
+                <div class="context">
+                    This is not a linear equation because it passes
+                    variables into functions.
+                </div><br><br>
+
+                And what linear algebra is is a way for us to solve
+                variables for sets of linear equations. By leveraging
+                it, we can more quickly and efficiently solve problems
+                pertaining to computer graphics, electrical engineering,
+                or what we will be using it for, data science and
+                artificial intelligence.
+                <br>
+                This is done by following a pretty simple equation:
+                $$
+                M * w = v
+                $$
+                Where $M$ is a matrix, $w$ is a vector holding our
+                variables in a set of linear equations, and $v$ is a
+                vector holding the answers to our set of linear
+                equations.
+            </p>
+
+            <div class="commentbox"><p class="commenttext">
+                u/ZMeson. "ELI5: What is linear algebra?"<br>
+                <em>Reddit</em>, 30 Apr. 2018,<br>
+                <a
+                href="https://www.reddit.com/r/explainlikeimfive/comments/8fx48s/comment/dy77x74"
+                >https://www.reddit.com/r/explainlikeimfive/comments/8fx48s/comment/dy77x74/</a>.
+            </p></div>
+        </div>
+
+        <footer>
+            <a href="../../index.html">Home</a>&nbsp;
+            <a href="../index.html">Back</a>
+        </footer>
+    </body>
+</html>
