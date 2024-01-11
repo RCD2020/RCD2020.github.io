@@ -16,3 +16,14 @@ header, footer {
     padding: 0px 5px 0px 10px;
     border-left: 5px solid #ca7;
 }
+
+.context {
+    text-align: center;
+    background-color: #cef;
+    border-radius: 25px;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #444;
+}
