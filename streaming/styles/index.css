@@ -1,12 +1,25 @@
 @font-face {
-    font-family: Satoshi;
-    src: url(Satoshi-Regular.otf);
+    font-family: 'Satoshi';
+    src: url(fonts/Satoshi-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(fonts/Satoshi-Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url(fonts/Satoshi-Bold.otf);
+    font-weight: bold;
 }
 
 html {
     color: #f0f0ff;
     background-color: #111;
-    font-family: Satoshi;
+    font-family: 'Satoshi';
 }
 
 a {
@@ -22,10 +35,12 @@ a {
 
 #intro h1 {
     font-size: 70px;
+    font-family: 'Satoshi';
 }
 
 #intro h2 {
-    color: #000
+    color: #000;
+    font-weight: 500;
 }
 
 
