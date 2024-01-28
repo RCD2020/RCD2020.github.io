@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(Satoshi-Regular.otf);
+}
+
+html {
+    color: #f0f0ff;
+    background-color: #111;
+    font-family: Satoshi;
+}
+
+a {
+    color: #f0f0ff;
+}
+
+#intro {
+    /* background-color: #212025; */
+    background-color: #9146ff;
+    border-radius: 10px;
+    padding: 1px 20px 1px 20px;
+}
+
+#intro h1 {
+    font-size: 70px;
+}
+
+#intro h2 {
+    color: #000
+}
+
+
+@media only screen and (max-width: 599px) {
+    
+}
+@media only screen and (min-width: 600px) {
+
+}
+@media only screen and (min-width: 900px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
+@media only screen and (min-width: 1800px) {
+
+}
+
+#test {
+    position: absolute;
+    right: 0;
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
