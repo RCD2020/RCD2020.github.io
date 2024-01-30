@@ -62,7 +62,8 @@ a {
 
 #test {
     position: absolute;
-    right: 0;
+    top: 10px;
+    right: 10px;
     background-color: darkgray;
     border-radius: 5px;
     padding: 10px;
