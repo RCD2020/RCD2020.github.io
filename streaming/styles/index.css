@@ -44,26 +44,33 @@ a {
     font-weight: 500;
 }
 
-/* .card {
-    background-color: #212025;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 10px;
+#products {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.card:hover {
-    box-shadow: -5px 5px 0 0 #9146ff;
-} */
+.faux-link {
+    text-decoration: underline;
+    color: #9146ff;
+}
 
 
 @media only screen and (max-width: 599px) {
-    
+    .card {
+        margin: 1%;
+    }
 }
 @media only screen and (min-width: 600px) {
-
+    .card {
+        margin: .6%;
+        width: 48.8%;
+    }
 }
 @media only screen and (min-width: 900px) {
-
+    .card {
+        margin: .5%;
+        width: 32.3%
+    }
 }
 @media only screen and (min-width: 1200px) {
 
