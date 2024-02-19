@@ -1,0 +1,24 @@
+html {
+    background-color: #26262c;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+#content {
+    position: absolute;
+    width: 100%;
+    padding-top: 50px;
+}
+
+#header-svg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#title {
+    text-align: center;
+}
