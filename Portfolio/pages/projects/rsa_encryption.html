@@ -77,6 +77,28 @@
                     decrypt it? This question led me to asymmetrical
                     encryption.
                 </p>
+                <h3>Details</h3>
+                <p>
+                    The first step to any good encryption algorithm is
+                    to choose our prime numbers. The reason we use prime
+                    numbers is because when we do operations with these
+                    numbers, it is incredibly difficult and time
+                    intensive to find large prime factors of our
+                    products. To generate a prime number, I basically
+                    just repeatedly generated random numbers, and then
+                    using the Miller-Rabin primality test, checked if
+                    those random numbers were prime or not. The
+                    Miller-Rabin primality test is a probabilistic test
+                    that fairly accurately tells when a number is prime.
+                    It does this be generating a number of tests that
+                    would give us evidence that it is prime or not.
+                    There are going to be some non prime numbers that
+                    slip through, however they should be far and few in
+                    between.
+                </p>
+                <p>
+                    
+                </p>
             </div>
         </div>
     </body>
