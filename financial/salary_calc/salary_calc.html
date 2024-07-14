@@ -21,7 +21,7 @@
                 <label for="home_price">Home Price:</label>
                 $<input type="number" name="home_price" id="home_price"
                     min="1000" step="1000" value="240000"
-                    onchange="update_mortgage()">
+                    onchange="update_mortgage(); update_down_max();">
                 <br>
 
                 <label for="mortgage_rate">Mortgage Rate:</label>
@@ -80,6 +80,12 @@
                     function update_mortgage() {
                         new_installments = mortgage().toFixed(2);
                         monthly_payment.value = new_installments;
+                    }
+
+                    function update_down_max() {
+                        down_payment.setAttribute(
+                            'max', home_price.value
+                        );
                     }
                 </script>
             </div>
