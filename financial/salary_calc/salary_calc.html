@@ -11,8 +11,7 @@
 
         <div id="calculator">
             <div id="home_cost">
-                <label for="monthly_payment">
-                    Monthly Mortgage Payments:</label>
+                <label for="monthly_payment">Mortgage Payments:</label>
                 $<input type="number"
                     name="monthly_payment" id="monthly_payment"
                     min="1" step="100" value="1608.02">
@@ -80,6 +79,7 @@
                     function update_mortgage() {
                         new_installments = mortgage().toFixed(2);
                         monthly_payment.value = new_installments;
+                        update_req_sal();
                     }
 
                     function update_down_max() {
@@ -93,24 +93,78 @@
 
 
 
-            <div id="cost_of_living">
-                <div id="transportation">
-                    <label for="gas">Gas:</label>
-                    $<input type="number" name="gas" id="gas"
-                        min="0" step="1" value="131">
-                    <br>
+            <div id="debt">
+                <label for="debt_total">Debt Payments</label>
+                $<input type="number" name="debt_total" id="debt_total"
+                    min="0" step="50" value="0">
+                <br>
 
-                    <label for="car_loan">Car Loan:</label>
-                    $<input type="number" name="car_loan" id="car_loan"
-                        min="0" step="10" value="377">
-                </div>
+
+                <label for="car_loan">Car Loan:</label>
+                $<input type="number" name="car_loan" id="car_loan"
+                    min="0" step="25" value="377"
+                    onchange="update_debt_total()">
+                <br>
+
+                <label for="student_loan">Student Loan:</label>
+                $<input type="number"
+                    name="student_loan" id="student_loan"
+                    min="0" step="25" value="106"
+                    onchange="update_debt_total()">
+
+
+                <script>
+                    var debt_total = document.getElementById(
+                        'debt_total');
+
+                    var car_loan = document.getElementById('car_loan');
+                    var student_loan = document.getElementById(
+                        'student_loan'
+                    );
+
+
+                    function update_debt_total() {
+                        let total = (
+                            parseFloat(car_loan.value)
+                            + parseFloat(student_loan.value)
+                        );
+
+                        debt_total.value = total.toFixed(2);
+                        update_req_sal();
+                    }
+
+                    update_debt_total();
+                </script>
             </div>
             <hr>
 
 
             
             <div id="output">
+                <h3>Required Gross Salary</h3>
+                <h4 id="req_sal"></h4>
 
+                <script>
+                    var req_sal = document.getElementById('req_sal');
+
+                    function update_req_sal() {
+                        let mon_pay = parseFloat(monthly_payment.value);
+
+                        let home_min = mon_pay / .28 * 12;
+                        let debt_min = (
+                            (mon_pay + parseFloat(debt_total.value))
+                            / .36 * 12
+                        );
+
+                        salary = Math.max(home_min, debt_min);
+
+                        req_sal.innerText = (
+                            '$' + String(salary.toFixed(2))
+                        );
+                    }
+
+                    update_req_sal();
+                </script>
             </div>
         </div>
     </body>
