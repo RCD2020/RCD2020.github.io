@@ -111,6 +111,19 @@
                     name="student_loan" id="student_loan"
                     min="0" step="25" value="106"
                     onchange="update_debt_total()">
+                <br>
+
+                <label for="per_loan">Personal Loans:</label>
+                $<input type="number" name="per_loan" id="per_loan"
+                    min="0" step="25" value="517"
+                    onchange="update_debt_total()">
+                <br>
+
+                <label for="card_paym">Card Payments:</label>
+                $<input type="number"
+                    name="card_paym" id="card_paym"
+                    min="0" step="25" value="363"
+                    onchange="update_debt_total()">
 
 
                 <script>
@@ -121,12 +134,18 @@
                     var student_loan = document.getElementById(
                         'student_loan'
                     );
+                    var per_loan = document.getElementById('per_loan');
+                    var card_paym = document.getElementById(
+                        'card_paym'
+                    );
 
 
                     function update_debt_total() {
                         let total = (
                             parseFloat(car_loan.value)
                             + parseFloat(student_loan.value)
+                            + parseFloat(per_loan.value)
+                            + parseFloat(card_paym.value)
                         );
 
                         debt_total.value = total.toFixed(2);
