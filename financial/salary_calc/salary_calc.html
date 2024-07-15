@@ -14,7 +14,8 @@
                 <label for="monthly_payment">Mortgage Payments:</label>
                 $<input type="number"
                     name="monthly_payment" id="monthly_payment"
-                    min="1" step="100" value="1608.02">
+                    min="1" step="100" value="1608.02"
+                    onchange="update_req_sal()">
                 <br>
 
                 <label for="home_price">Home Price:</label>
@@ -26,7 +27,7 @@
                 <label for="mortgage_rate">Mortgage Rate:</label>
                 <input type="number"
                     name="mortgage_rate" id="mortgage_rate"
-                    min=".01" step=".01" value="7.07"
+                    min="0" step=".01" value="7.07"
                     onchange="update_mortgage()">%
                 <br>
 
@@ -93,10 +94,63 @@
 
 
 
+            <div id="other_costs">
+                <label for="other_cost">Other Home Costs:</label>
+                $<input type="number" name="other_cost" id="other_cost"
+                    min="0" step="50"
+                    onchange="update_req_sal()">
+                <br>
+
+
+                <label for="home_ins">Homeowners Insurance:</label>
+                $<input type="number" name="home_ins" id="home_ins"
+                    min="0" step="10" value="170"
+                    onchange="update_other_costs()">
+                <br>
+
+                <label for="prop_tax">Property Tax:</label>
+                $<input type="number" name="prop_tax" id="prop_tax"
+                    min="0" step="100" value="1800"
+                    onchange="update_other_costs()"> per year
+                <br>
+
+                <label for="hoa_fee">HOA Fees:</label>
+                $<input type="number" name="hoa_fee" id="hoa_fee"
+                    min="0" step="10" value="0"
+                    onchange="update_other_costs()">
+
+                
+                <script>
+                    var other_cost = document.getElementById(
+                        'other_cost'
+                    );
+                    var home_ins = document.getElementById('home_ins');
+                    var prop_tax = document.getElementById('prop_tax');
+                    var hoa_fee = document.getElementById('hoa_fee');
+
+                    function update_other_costs() {
+                        let total = (
+                            parseFloat(home_ins.value)
+                            + parseFloat(prop_tax.value) / 12
+                            + parseFloat(hoa_fee.value)
+                        );
+
+                        other_cost.value = total.toFixed(2);
+                        update_req_sal();
+                    }
+
+                    update_other_costs();
+                </script>
+            </div>
+            <hr>
+
+
+
             <div id="debt">
-                <label for="debt_total">Debt Payments</label>
+                <label for="debt_total">Debt Payments:</label>
                 $<input type="number" name="debt_total" id="debt_total"
-                    min="0" step="50" value="0">
+                    min="0" step="50" value="0"
+                    onchange="update_req_sal()">
                 <br>
 
 
@@ -167,7 +221,10 @@
                     var req_sal = document.getElementById('req_sal');
 
                     function update_req_sal() {
-                        let mon_pay = parseFloat(monthly_payment.value);
+                        let mon_pay = (
+                            parseFloat(monthly_payment.value)
+                            + parseFloat(other_cost.value)
+                        );
 
                         let home_min = mon_pay / .28 * 12;
                         let debt_min = (
