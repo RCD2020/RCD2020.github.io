@@ -36,9 +36,6 @@ h1 {
     background: -webkit-linear-gradient(
         #45cb85, #14a76c
     );
-    /* background-image: linear-gradient(
-        #45cb85, #14a76c
-    ); */
 }
 
 #other_costs {
@@ -59,7 +56,7 @@ h1 {
 }
 
 #calculator {
-    color: #272727
+    color: #272727;
 }
 
 .cost_section {
@@ -77,4 +74,5 @@ input[type=number] {
     border-radius: 5px;
     margin: 0px 3px 3px 3px;
     color: #272727;
+    font-weight: bold;
 }

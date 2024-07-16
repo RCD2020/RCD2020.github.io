@@ -16,7 +16,7 @@
 
         <div id="calculator">
             <div id="home_cost" class="cost_section">
-                <label for="monthly_payment">Mortgage Payments:</label>
+                <label for="monthly_payment">Mortgage Payments:</label><br>
                 $<input type="number"
                     name="monthly_payment" id="monthly_payment"
                     min="1" step="100" value="1608.02"
@@ -24,27 +24,27 @@
                 <br>
 
                 <div class="indent">
-                <label for="home_price">Home Price:</label>
+                <label for="home_price">Home Price:</label><br>
                 $<input type="number" name="home_price" id="home_price"
                     min="1000" step="1000" value="240000"
                     onchange="update_mortgage(); update_down_max();">
                 <br>
 
-                <label for="mortgage_rate">Mortgage Rate:</label>
+                <label for="mortgage_rate">Mortgage Rate:</label><br>
                 <input type="number"
                     name="mortgage_rate" id="mortgage_rate"
                     min="0" step=".01" value="7.07"
                     onchange="update_mortgage()">%
                 <br>
 
-                <label for="term_in_years">Term in Years:</label>
+                <label for="term_in_years">Term in Years:</label><br>
                 <input type="number"
                     name="term_in_years" id="term_in_years"
                     min="5" max="60" step="5" value="30"
                     onchange="update_mortgage()"> years
                 <br>
 
-                <label for="down_payment">Down Payment:</label>
+                <label for="down_payment">Down Payment:</label><br>
                 $<input type="number"
                     name="down_payment" id="down_payment"
                     min="0" max="240000" step="1000" value="0"
@@ -101,7 +101,7 @@
 
 
             <div id="other_costs" class="cost_section">
-                <label for="other_cost">Other Home Costs:</label>
+                <label for="other_cost">Other Home Costs:</label><br>
                 $<input type="number" name="other_cost" id="other_cost"
                     min="0" step="50"
                     onchange="update_req_sal()">
@@ -109,19 +109,19 @@
 
 
                 <div class="indent">
-                <label for="home_ins">Homeowners Insurance:</label>
+                <label for="home_ins">Homeowners Insurance:</label><br>
                 $<input type="number" name="home_ins" id="home_ins"
                     min="0" step="10" value="170"
                     onchange="update_other_costs()">
                 <br>
 
-                <label for="prop_tax">Property Tax:</label>
+                <label for="prop_tax">Property Tax:</label><br>
                 $<input type="number" name="prop_tax" id="prop_tax"
                     min="0" step="100" value="1800"
                     onchange="update_other_costs()"> per year
                 <br>
 
-                <label for="hoa_fee">HOA Fees:</label>
+                <label for="hoa_fee">HOA Fees:</label><br>
                 $<input type="number" name="hoa_fee" id="hoa_fee"
                     min="0" step="10" value="0"
                     onchange="update_other_costs()">
@@ -154,7 +154,7 @@
 
 
             <div id="debt" class="cost_section">
-                <label for="debt_total">Debt Payments:</label>
+                <label for="debt_total">Debt Payments:</label><br>
                 $<input type="number" name="debt_total" id="debt_total"
                     min="0" step="50" value="0"
                     onchange="update_req_sal()">
@@ -162,26 +162,26 @@
 
 
                 <div class="indent">
-                <label for="car_loan">Car Loan:</label>
+                <label for="car_loan">Car Loan:</label><br>
                 $<input type="number" name="car_loan" id="car_loan"
                     min="0" step="25" value="377"
                     onchange="update_debt_total()">
                 <br>
 
-                <label for="student_loan">Student Loan:</label>
+                <label for="student_loan">Student Loan:</label><br>
                 $<input type="number"
                     name="student_loan" id="student_loan"
                     min="0" step="25" value="106"
                     onchange="update_debt_total()">
                 <br>
 
-                <label for="per_loan">Personal Loans:</label>
+                <label for="per_loan">Personal Loans:</label><br>
                 $<input type="number" name="per_loan" id="per_loan"
                     min="0" step="25" value="517"
                     onchange="update_debt_total()">
                 <br>
 
-                <label for="card_paym">Card Payments:</label>
+                <label for="card_paym">Card Payments:</label><br>
                 $<input type="number"
                     name="card_paym" id="card_paym"
                     min="0" step="25" value="363"
