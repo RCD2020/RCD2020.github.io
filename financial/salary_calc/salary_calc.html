@@ -13,10 +13,9 @@
 
     <body>
         <h1>Salary Required for Home Loan</h1>
-        <hr>
 
         <div id="calculator">
-            <div id="home_cost">
+            <div id="home_cost" class="cost_section">
                 <label for="monthly_payment">Mortgage Payments:</label>
                 $<input type="number"
                     name="monthly_payment" id="monthly_payment"
@@ -24,6 +23,7 @@
                     onchange="update_req_sal()">
                 <br>
 
+                <div class="indent">
                 <label for="home_price">Home Price:</label>
                 $<input type="number" name="home_price" id="home_price"
                     min="1000" step="1000" value="240000"
@@ -49,6 +49,7 @@
                     name="down_payment" id="down_payment"
                     min="0" max="240000" step="1000" value="0"
                     onchange="update_mortgage()">
+                </div>
 
                 <script>
                     var monthly_payment = document.getElementById(
@@ -96,11 +97,10 @@
                     }
                 </script>
             </div>
-            <hr>
 
 
 
-            <div id="other_costs">
+            <div id="other_costs" class="cost_section">
                 <label for="other_cost">Other Home Costs:</label>
                 $<input type="number" name="other_cost" id="other_cost"
                     min="0" step="50"
@@ -108,6 +108,7 @@
                 <br>
 
 
+                <div class="indent">
                 <label for="home_ins">Homeowners Insurance:</label>
                 $<input type="number" name="home_ins" id="home_ins"
                     min="0" step="10" value="170"
@@ -124,6 +125,7 @@
                 $<input type="number" name="hoa_fee" id="hoa_fee"
                     min="0" step="10" value="0"
                     onchange="update_other_costs()">
+                </div>
 
                 
                 <script>
@@ -148,11 +150,10 @@
                     update_other_costs();
                 </script>
             </div>
-            <hr>
 
 
 
-            <div id="debt">
+            <div id="debt" class="cost_section">
                 <label for="debt_total">Debt Payments:</label>
                 $<input type="number" name="debt_total" id="debt_total"
                     min="0" step="50" value="0"
@@ -160,6 +161,7 @@
                 <br>
 
 
+                <div class="indent">
                 <label for="car_loan">Car Loan:</label>
                 $<input type="number" name="car_loan" id="car_loan"
                     min="0" step="25" value="377"
@@ -184,6 +186,7 @@
                     name="card_paym" id="card_paym"
                     min="0" step="25" value="363"
                     onchange="update_debt_total()">
+                </div>
 
 
                 <script>
@@ -215,7 +218,6 @@
                     update_debt_total();
                 </script>
             </div>
-            <hr>
 
 
             
